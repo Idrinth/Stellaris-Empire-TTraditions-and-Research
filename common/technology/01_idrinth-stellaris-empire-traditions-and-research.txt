@@ -1,0 +1,205 @@
+@t1Val = 300
+@t2Val = 600
+@t3Val = 900
+@t4Val = 1200
+
+#
+# TECH - COLONIES
+#
+tech_idrinthstellarisempiretraditionsandresearch_communication_1 = {
+    cost = @t1Val
+    area = society
+    tier = 1
+    category = { statecraft }
+    weight = @t1Val
+    modifier = {
+        all_technology_research_speed = 0.03
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_communication_2 = {
+    cost = @t2Val
+    area = society
+    tier = 2
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_communication_1 }
+    weight = @t2Val
+    modifier = {
+        all_technology_research_speed = 0.033
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_communication_3 = {
+    cost = @t3Val
+    area = society
+    tier = 3
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_communication_2 }
+    weight = @t3Val
+    modifier = {
+        all_technology_research_speed = 0.036
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_communication_4 = {
+    cost = @t4Val
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_communication_3 }
+    weight = @t4Val
+    modifier = {
+        all_technology_research_speed = 0.039
+    }
+}
+#
+# TECH - POP
+#
+tech_idrinthstellarisempiretraditionsandresearch_schooling_1 = {
+    cost = @t1Val
+    area = society
+    tier = 1
+    category = { statecraft }
+    weight = @t1Val
+    modifier = {
+        tile_resource_physics_research_mult=0.03
+        tile_resource_society_research_mult=0.03
+        tile_resource_engineering_research_mult=0.03
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_2 = {
+    cost = @t2Val
+    area = society
+    tier = 2
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_1 }
+    weight = @t2Val
+    modifier = {
+        tile_resource_physics_research_mult=0.033
+        tile_resource_society_research_mult=0.033
+        tile_resource_engineering_research_mult=0.033
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_3 = {
+    cost = @t3Val
+    area = society
+    tier = 3
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_2 }
+    weight = @t3Val
+    modifier = {
+        tile_resource_physics_research_mult=0.036
+        tile_resource_society_research_mult=0.036
+        tile_resource_engineering_research_mult=0.036
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_4 = {
+    cost = @t4Val
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_3 }
+    weight = @t4Val
+    modifier = {
+        tile_resource_physics_research_mult=0.039
+        tile_resource_society_research_mult=0.039
+        tile_resource_engineering_research_mult=0.039
+    }
+}
+#
+# TRADITION - XENOS
+#
+tech_idrinthstellarisempiretraditionsandresearch_integration_1 = {
+    cost = @t1Val
+    area = society
+    tier = 1
+    category = { statecraft }
+    weight = @t1Val
+    modifier = {
+        tradition_cost_num_xenos_mult= -0.1
+        tradition_cost_num_xeno_slaves_mult=-0.1
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_2 = {
+    cost = @t2Val
+    area = society
+    tier = 2
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_1 }
+    weight = @t2Val
+    modifier = {
+        tradition_cost_num_xenos_mult= -0.11
+        tradition_cost_num_xeno_slaves_mult=-0.11
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_3 = {
+    cost = @t3Val
+    area = society
+    tier = 3
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_2 }
+    weight = @t3Val
+    modifier = {
+        tradition_cost_num_xenos_mult= -0.12
+        tradition_cost_num_xeno_slaves_mult=-0.12
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_4 = {
+    cost = @t4Val
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_schooling_3 }
+    weight = @t4Val
+    modifier = {
+        tradition_cost_num_xenos_mult= -0.13
+        tradition_cost_num_xeno_slaves_mult=-0.13
+    }
+}
+#
+# TRADITION - SLAVES
+#
+tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_1 = {
+    cost = @t1Val
+    area = society
+    tier = 1
+    category = { statecraft }
+    weight = @t1Val
+    modifier = {
+        tradition_cost_num_slaves_mult= -0.1
+        tradition_cost_num_xeno_slaves_mult=-0.1
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_2 = {
+    cost = @t2Val
+    area = society
+    tier = 2
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_1 }
+    weight = @t2Val
+    modifier = {
+        tradition_cost_num_slaves_mult= -0.11
+        tradition_cost_num_xeno_slaves_mult=-0.11
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_3 = {
+    cost = @t3Val
+    area = society
+    tier = 3
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_2 }
+    weight = @t3Val
+    modifier = {
+        tradition_cost_num_slaves_mult= -0.12
+        tradition_cost_num_xeno_slaves_mult=-0.12
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_schooling_4 = {
+    cost = @t4Val
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_3 }
+    weight = @t4Val
+    modifier = {
+        tradition_cost_num_slaves_mult= -0.13
+        tradition_cost_num_xeno_slaves_mult=-0.13
+    }
+}
