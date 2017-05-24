@@ -191,7 +191,7 @@ tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_3 = {
         tradition_cost_num_xeno_slaves_mult=-0.12
     }
 }
-tech_idrinthstellarisempiretraditionsandresearch_schooling_4 = {
+tech_idrinthstellarisempiretraditionsandresearch_mind_suppressor_4 = {
     cost = @t4Val
     area = society
     tier = 4
@@ -201,5 +201,51 @@ tech_idrinthstellarisempiretraditionsandresearch_schooling_4 = {
     modifier = {
         tradition_cost_num_slaves_mult= -0.13
         tradition_cost_num_xeno_slaves_mult=-0.13
+    }
+}
+#
+# TRADITION - Colonies
+#
+tech_idrinthstellarisempiretraditionsandresearch_centralized_media_1 = {
+    cost = @t1Val
+    area = society
+    tier = 1
+    category = { statecraft }
+    weight = @t1Val
+    modifier = {
+        tradition_cost_num_colonies_mult= -0.1
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_centralized_media_2 = {
+    cost = @t2Val
+    area = society
+    tier = 2
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_centralized_media_1 }
+    weight = @t2Val
+    modifier = {
+        tradition_cost_num_colonies_mult=-0.11
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_centralized_media_3 = {
+    cost = @t3Val
+    area = society
+    tier = 3
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_centralized_media_2 }
+    weight = @t3Val
+    modifier = {
+        tradition_cost_num_colonies_mult=-0.12
+    }
+}
+tech_idrinthstellarisempiretraditionsandresearch_centralized_media_4 = {
+    cost = @t4Val
+    area = society
+    tier = 4
+    category = { statecraft }
+    prerequisites  = { tech_idrinthstellarisempiretraditionsandresearch_centralized_media_3 }
+    weight = @t4Val
+    modifier = {
+        tradition_cost_num_colonies_mult=-0.13
     }
 }
